@@ -1,12 +1,14 @@
 import { getServices} from "./database.js"
 
-const guests = getServices()
+const services = getServices()
 
 export const Services = () => {
-    return `
-        <ul>
-            <li>Service 1</li>
-            <li>Service 2</li>
-        </ul>
-    `;
+    let html = "<ul>"
+    for (const service of services) {
+        html += `
+            <li>${service.name}</li>
+    `
+    }
+    html = html + "</ul>"
+    return html;
 };
