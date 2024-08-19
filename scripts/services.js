@@ -14,24 +14,30 @@ export const Services = () => {
   html = html + '</ul>';
   return html;
 };
-
+// Click event listener//
 document.addEventListener('click', (clickEvent) => {
   const whatWasClickedOn = clickEvent.target;
-
+  
+  //Check if clicked item's data-type is "service"//
   if (whatWasClickedOn.dataset.type === 'service') {
+    // Save data-id attribute in variable//
     const serviceId = parseInt(whatWasClickedOn.dataset.id);
+    //Filter objects in parkAreaServices that have same serviceId as serviceId variable//
     const matchedParkAreaServices = parkAreaServices.filter(
       (service) => service.serviceId === serviceId
     );
+
     const mainAttractionArr = [];
+    //Loop over matchedParkAreas services array and find matched areaID//
     for (const parkArea of matchedParkAreaServices) {
+      // Push the matched areas in mainAttractionsArr//
       mainAttractionArr.push(findMatchedArea(parkArea, areas));
     }
-
+     //Transform each array item to show only .mainAttraction value//
     let mainAttractions = mainAttractionArr.map(
       (attraction) => attraction.mainAttraction
     );
-
+   
     if (mainAttractions.length === 2) {
       mainAttractions = mainAttractions.join(' and ');
     }
@@ -44,7 +50,7 @@ document.addEventListener('click', (clickEvent) => {
     }
   }
 });
-
+ //Helper function to find matched Areas//
 const findMatchedArea = (parkArea, areaArr) => {
   let matchedArea = null;
   for (const area of areaArr) {

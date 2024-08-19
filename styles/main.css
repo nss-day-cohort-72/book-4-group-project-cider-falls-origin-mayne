@@ -1,9 +1,7 @@
-#main {
-  border: solid black;
-}
+
 
 .areas {
-  border: dotted blue;
+  
   display: flex;
   flex-wrap: wrap;
   align-content: flex-start;
@@ -16,23 +14,35 @@
 
 .areas-container {
   min-width: 400px;
-  border: solid black;
-  max-height: 300px;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.3);
+  min-height: 400px;
   padding: 15px;
+  transition: transform 0.3s ease;
+}
+
+.areas-container:hover {
+  transform: translateY(-5px);
+  box-shadow: 4px 4px 8px rgba(0, 0, 0, 0.6);
 }
 
 .areas_and_guests {
-  border: dotted green;
   display: flex;
 }
 
 .header-container {
-  border: solid black;
+  
   text-align: center;
 }
 
 .guest-container {
-  border: solid black;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.3);
   padding: 0 55px 20px 55px;
-  
+}
+
+.services ul {
+  list-style: none;
+  display: flex;
+  gap: 15px;
 }
