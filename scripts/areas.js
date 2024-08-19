@@ -14,6 +14,7 @@ export const Areas = () => {
   let html = '';
   for (const area of areas) {
     html += `
+             <div class = "areas-container">
             <h1 data-type="area" data-id="${area.id}">${area.mainAttraction}</h1>
     `;
     html += `<h3>Services</h3>`;
@@ -34,6 +35,9 @@ export const Areas = () => {
         html += `<li>${guest.name}</li>`;
       }
     }
+    html += `
+    </div>
+    `;
   }
   return html;
 };

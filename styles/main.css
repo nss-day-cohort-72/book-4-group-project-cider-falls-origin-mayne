@@ -1,4 +1,38 @@
+#main {
+  border: solid black;
+}
+
+.areas {
+  border: dotted blue;
+  display: flex;
+  flex-wrap: wrap;
+  align-content: flex-start;
+
+  gap: 10px;
+  max-width: 1400px;
+
+  /* justify-content: space-around; */
+}
+
+.areas-container {
+  min-width: 400px;
+  border: solid black;
+  max-height: 300px;
+  padding: 15px;
+}
+
+.areas_and_guests {
+  border: dotted green;
+  display: flex;
+}
+
+.header-container {
+  border: solid black;
+  text-align: center;
+}
+
 .guest-container {
   border: solid black;
+  padding: 0 55px 20px 55px;
   
 }

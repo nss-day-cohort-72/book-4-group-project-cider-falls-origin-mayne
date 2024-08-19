@@ -38,15 +38,6 @@ const database = {
     { id: 4, region: 'Southwest', mainAttraction: 'Gander River' },
     { id: 5, region: 'South', mainAttraction: 'Campgrounds' },
     { id: 6, region: 'Southeast', mainAttraction: 'Pine Bluffs Trails' },
-    { id: 7, region: 'West', mainAttraction: 'Sunset Canyon' },
-    { id: 8, region: 'East', mainAttraction: 'Maple Creek' },
-    { id: 9, region: 'North', mainAttraction: 'Bear Ridge' },
-    { id: 10, region: 'South', mainAttraction: 'Oakwood Meadows' },
-    { id: 11, region: 'Northeast', mainAttraction: 'Silver Lake' },
-    { id: 12, region: 'Southwest', mainAttraction: 'Golden Valley' },
-    { id: 13, region: 'Northwest', mainAttraction: 'Cedar Grove' },
-    { id: 14, region: 'East', mainAttraction: 'Mossy Hollow' },
-    { id: 15, region: 'West', mainAttraction: 'Highland Peaks' },
   ],
   // Additional arrays will follow...
   services: [
@@ -101,18 +92,17 @@ const database = {
 };
 
 export const getGuests = () => {
-    return database.guests.map(guest => ({...guest}))
-  }
+  return database.guests.map((guest) => ({ ...guest }));
+};
 
-  export const getAreas = () => {
-    return database.areas.map(area => ({...area}))
-  }
+export const getAreas = () => {
+  return database.areas.map((area) => ({ ...area }));
+};
 
 export const getServices = () => {
-    return database.services.map(service => ({...service}))
-  }
+  return database.services.map((service) => ({ ...service }));
+};
 
 export const getParkAreaServices = () => {
-    return database.ParkAreaServices.map(areaService => ({...areaService}))
-  }
-    
+  return database.ParkAreaServices.map((areaService) => ({ ...areaService }));
+};

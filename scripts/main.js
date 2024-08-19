@@ -11,6 +11,7 @@ const mainContainer = document.getElementById("container");
 
 // Generate the HTML content for the services, areas, and guest list sections
 const applicationHTML = `
+<h1 class ="header-container">Cider Falls</h1>
 <section class="services">
     <h5 class="service--header">Come experience all we have to offer:</h5>
       ${Services()}
@@ -19,9 +20,9 @@ const applicationHTML = `
     <section class="areas">
         ${Areas()}
     </section>
-    <aside class="guestList">
+    <section class="guestList">
           ${Guests()}
-    </aside>
+    </section>
 </div>
 `;
 
