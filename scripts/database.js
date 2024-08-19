@@ -71,23 +71,23 @@ const database = {
     { id: 10, areaId: 5, serviceId: 9 }, // Campgrounds offer Information
     { id: 11, areaId: 6, serviceId: 4 }, // Pine Bluffs Trails offer Hiking
     { id: 12, areaId: 6, serviceId: 10 }, // Pine Bluffs Trails offer Zip Lines
-    { id: 13, areaId: 7, serviceId: 1 }, // Sunset Canyon offers Rafting
-    { id: 14, areaId: 8, serviceId: 5 }, // Maple Creek offers Picnicking
-    { id: 15, areaId: 9, serviceId: 4 }, // Bear Ridge offers Hiking
-    { id: 16, areaId: 9, serviceId: 8 }, // Bear Ridge offers Parking
-    { id: 17, areaId: 9, serviceId: 11 }, // Bear Ridge offers Hotel
-    { id: 18, areaId: 10, serviceId: 2 }, // Oakwood Meadows offers Canoeing
-    { id: 19, areaId: 10, serviceId: 8 }, // Oakwood Meadows offers Parking
-    { id: 20, areaId: 11, serviceId: 2 }, // silver lake offers canoeing
-    { id: 21, areaId: 11, serviceId: 14 }, // silver lake offers Playground
-    { id: 22, areaId: 12, serviceId: 3 }, // golden valley offers fishing
-    { id: 23, areaId: 12, serviceId: 8 }, // golden valley offersparking
-    { id: 22, areaId: 13, serviceId: 11 }, // cedar grove offers Hotel
-    { id: 23, areaId: 13, serviceId: 7 }, // cedar grove offers Lodging
-    { id: 24, areaId: 14, serviceId: 3 }, // mossy hollow offers fishing
-    { id: 25, areaId: 14, serviceId: 6 }, // mossy hollow offers rock climbing
-    { id: 26, areaId: 15, serviceId: 12 }, // highland peaks offers restaurant
-    { id: 27, areaId: 15, serviceId: 5 }, // highland peaks offers picnicking
+    { id: 13, areaId: 1, serviceId: 1 }, // Sunset Canyon offers Rafting
+    { id: 14, areaId: 2, serviceId: 5 }, // Maple Creek offers Picnicking
+    { id: 15, areaId: 3, serviceId: 4 }, // Bear Ridge offers Hiking
+    { id: 16, areaId: 4, serviceId: 8 }, // Bear Ridge offers Parking
+    { id: 17, areaId: 5, serviceId: 11 }, // Bear Ridge offers Hotel
+    { id: 18, areaId: 6, serviceId: 2 }, // Oakwood Meadows offers Canoeing
+    { id: 19, areaId: 1, serviceId: 8 }, // Oakwood Meadows offers Parking
+    { id: 20, areaId: 2, serviceId: 2 }, // silver lake offers canoeing
+    { id: 21, areaId: 3, serviceId: 14 }, // silver lake offers Playground
+    { id: 22, areaId: 3, serviceId: 3 }, // golden valley offers fishing
+    { id: 23, areaId: 4, serviceId: 8 }, // golden valley offersparking
+    { id: 22, areaId: 4, serviceId: 11 }, // cedar grove offers Hotel
+    { id: 23, areaId: 5, serviceId: 7 }, // cedar grove offers Lodging
+    { id: 24, areaId: 6, serviceId: 3 }, // mossy hollow offers fishing
+    { id: 25, areaId: 1, serviceId: 6 }, // mossy hollow offers rock climbing
+    { id: 26, areaId: 2, serviceId: 12 }, // highland peaks offers restaurant
+    { id: 27, areaId: 5, serviceId: 5 }, // highland peaks offers picnicking
   ],
 };
 
