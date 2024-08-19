@@ -28,16 +28,16 @@ document.addEventListener('click', (clickEvent) => {
       mainAttractionArr.push(findMatchedArea(parkArea, areas));
     }
 
-    const mainAttractions = mainAttractionArr
-      .map((attraction) => attraction.mainAttraction)
-      
-      if (mainAttractions.length === 2) {
-        
-      }
-      
+    let mainAttractions = mainAttractionArr.map(
+      (attraction) => attraction.mainAttraction
+    );
+
+    if (mainAttractions.length === 2) {
+      mainAttractions = mainAttractions.join(' and ');
+    }
 
     const serviceName = whatWasClickedOn.textContent;
-    if (mainAttractions === '') {
+    if (mainAttractions.length === 0) {
       window.alert(`${serviceName} is not offered in any location`);
     } else {
       window.alert(`${serviceName} is available in ${mainAttractions}`);
